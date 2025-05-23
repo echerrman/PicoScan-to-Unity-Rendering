@@ -1,13 +1,13 @@
 # PicoScan LiDAR Unity Visualizer
 
-A real-time point cloud visualization system for the PicoScan 150 2D LiDAR scanner, featuring live data streaming to Unity with dual rendering modes.
+A real-time point cloud visualization system for the PicoScan 100 2D LiDAR scanner, featuring live data streaming to Unity with dual rendering modes.
 
 ## Overview
 
-This project provides a complete pipeline for receiving, parsing, and visualizing LiDAR data from PicoScan 150 sensors in Unity. It supports both persistent point accumulation for mapping and live-only mode for real-time visualization.
+This project provides a complete pipeline for receiving, parsing, and visualizing LiDAR data from PicoScan 100 sensors in Unity. It supports both persistent point accumulation for mapping and live-only mode for real-time visualization.
 
 **Key Features:**
-- Real-time UDP data reception from PicoScan 150
+- Real-time UDP data reception from PicoScan 100
 - Compact binary protocol parsing
 - Dual visualization modes (Persistent/Live-only)
 - Unity integration with instanced rendering
@@ -27,7 +27,7 @@ pip install numpy
 - Instanced rendering material
 
 ### Hardware
-- PicoScan 150 2D LiDAR scanner
+- PicoScan 100 2D LiDAR scanner
 - Network connection to scanner (UDP port 2115)
 
 ## Project Structure
@@ -59,7 +59,7 @@ pip install numpy
    ```
 
 4. **Configure Scanner**
-   - Ensure PicoScan 150 is sending data to UDP port 2115
+   - Ensure PicoScan 100 is sending data to UDP port 2115
    - Scanner should be on same network as host machine
 
 ## Usage
@@ -100,14 +100,14 @@ STATUS      # Get current status
 
 ## Network Ports
 
-- **2115**: PicoScan 150 data transmission
+- **2115**: PicoScan 100 data transmission
 - **5005**: Unity point cloud data reception  
 - **5006**: Control command reception
 
 ## Troubleshooting
 
 - Ensure firewall allows UDP traffic on required ports
-- Verify PicoScan 150 network configuration matches host settings
+- Verify PicoScan 100 network configuration matches host settings
 - Check Unity console for UDP reception errors
 - Monitor Python console for parsing warnings
 
